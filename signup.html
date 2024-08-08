@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="signup.css">
+    <title>Nexus Bloom | Sign Up</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>Nexus Bloom</p>
+            </div>
+        </nav>
+
+        <div class="form-box">
+            <div class="signup-container">
+                <div class="top">
+                    <span>Already have an account? <a href="index.html">Sign In</a></span>
+                    <header>Create an Account</header>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Full Name">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Sign Up" onclick="redirectToHomepage()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToHomepage() {
+            window.location.href = 'homepage.html';
+        }
+    </script>
+</body>
+</html>

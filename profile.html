@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Bloom | Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>User Profile</h1>
+        </header>
+
+        <div class="profile">
+            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-details">
+                <h2 id="name">John Doe</h2>
+                <p id="email">john.doe@example.com</p>
+                <p id="country">Country: USA</p>
+            </div>
+        </div>
+
+        <div class="logout-button">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            // Redirect to the sign-in page or perform logout actions
+            window.location.href = "index.html"; // Change to your sign-in page
+        }
+    </script>
+</body>
+</html>

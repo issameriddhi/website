@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Kalnia Glaze', sans-serif;
+}
+
+.carousel-image {
+    height: 100vh; /* Full screen height */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66211d; /* Dark Maroon Color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.carousel-caption button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #2b0a0b; /* Dark Color for Button Background */
+    color: #f0e68c; /* Light Color for Button Text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-caption button:hover {
+    background-color: #eb9395; /* Slightly lighter on hover */
+}
+
+/* Animation for text appearing one by one without disappearing */
+.animate-text {
+    opacity: 0;
+    animation: fadeInWords 3s ease-in-out forwards;
+}
+
+@keyframes fadeInWords {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
